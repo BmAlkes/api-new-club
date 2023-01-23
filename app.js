@@ -9,6 +9,10 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://new-club-clothes.vercel.app"],
+    allowedHeaders: ["Accept", "Content-Type"],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
     credentials: true,
   })
 );
