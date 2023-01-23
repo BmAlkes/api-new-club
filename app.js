@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://api-new-club.vercel.app"],
+    origin: ["http://localhost:5173", "https://new-club-clothes.vercel.app"],
     credentials: true,
   })
 );
